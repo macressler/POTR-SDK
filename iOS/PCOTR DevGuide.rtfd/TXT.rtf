@@ -1,0 +1,219 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf470
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;\f2\fnil\fcharset0 Menlo-Bold;
+}
+{\colortbl;\red255\green255\blue255;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid301\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid4}
+{\list\listtemplateid5\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid401\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid5}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}{\listoverride\listid5\listoverridecount0\ls5}}
+\margl1440\margr1440\vieww19660\viewh19380\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\b\fs24 \cf0 Postcard On The Run SDK\
+
+\b0 iOS Developer's Guide v2.4 - 4/25/2012\
+\
+
+\b Introduction & Terms\
+
+\b0 \
+By including the Postcard On The Run (POTR) SDK in your iPhone app, your customers can create real postcards sent through the mail to their friends and loved ones. Once you add the embedded framework to your project, simply supply an image and the POTR SDK will create a view controller guiding your user through the steps of creating and paying for a postcard.\
+\
+The POTR SDK is tightly integrated with the Postal Gopher web service. When your customer wants to send a postcard to a contact on their phone that does not have a mailing address, Postal Gopher will send them an email or SMS text message. The contact will have 48 hours to respond with an address to mail the postcard to. Because Postal Gopher is included with the POTR SDK, you do not need to do anything to take advantage of this service.\
+\
+We developed the POTR SDK to easily integrate into your iOS project. We would be happy to help and assist with any specific development concerns or issues. Email us at {\field{\*\fldinst{HYPERLINK "mailto:api@postcardontherun.com"}}{\fldrslt api@postcardontherun.com}}.\
+\
+
+\b POTR Partner Website\
+
+\b0 \
+To use the POTR SDK, you will need to sign up for a partner account at {\field{\*\fldinst{HYPERLINK "http://api.postcardontherun.com"}}{\fldrslt api.postcardontherun.com}}. Through the POTR partner website you can change the pricing of postcards your customers will send, and create promo codes for customer incentives and promotions.  You will receive quarterly earning reports and payments based on postcard sales through your app.\
+\
+
+\b iOS Development Kit Reference\
+
+\b0 \
+The Postcard On The Run SDK is distributed as an embedded framework built for iOS 5.0 and later. The SDK, latest documentation and your personal API key can be downloaded from the partner website at {\field{\*\fldinst{HYPERLINK "http://api.postcardontherun.com"}}{\fldrslt api.postcardontherun.com}}. If you have problems with the SDK, send an email to {\field{\*\fldinst{HYPERLINK "mailto:api@postcardontherun.com"}}{\fldrslt api@postcardontherun.com}}.\
+\
+
+\i Prerequisites\
+
+\i0 \
+In order to use the POTR embedded framework you must first add these system frameworks to your project if you do not already have them linked:\
+\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural
+\ls1\ilvl0
+\f1 \cf0 {\listtext	\'95	}AddressBook.framework\
+{\listtext	\'95	}AddressBookUI.framework\
+{\listtext	\'95	}AssetsLibrary.framework\
+{\listtext	\'95	}CFNetwork.framework\
+{\listtext	\'95	}CoreGraphics.framework\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural
+\cf0 	\'95	CoreLocation.framework\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural
+\ls2\ilvl0\cf0 {\listtext	\'95	}Foundation.framework\
+{\listtext	\'95	}ImageIO.framework\
+{\listtext	\'95	}libicucore.A.dylib\
+{\listtext	\'95	}libz.dylib\
+{\listtext	\'95	}MobileCoreServices.framework\
+{\listtext	\'95	}Security.framework\
+{\listtext	\'95	}SystemConfiguration.framework\
+{\listtext	\'95	}UIKit.framework\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural
+\ls3\ilvl0\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0 \cf0 Additionally you will need to make sure your project has these third-party libraries and frameworks installed to run the POTR SDK. For your convienance theses libraries and frameworks are included within the embedded framework so no additional effort is required. However, should you choose to use your own version of a third-party library/framework simply remove the overridden library/framework from the "Third Party Code" folder in the embedded framework:\
+\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural
+\ls4\ilvl0
+\f1 \cf0 {\listtext	\'95	}Apple-KeychainItemWrapper\
+{\listtext	\'95	}ASI\
+{\listtext	\'95	}DejalActivityView\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural
+\cf0 	\'95	Flurry\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural
+\ls5\ilvl0\cf0 {\listtext	\'95	}JSONKit\
+{\listtext	\'95	}PayPal\
+{\listtext	\'95	}Reachability\
+{\listtext	\'95	}RegexKitLite\
+{\listtext	\'95	}UIImage+Resize
+\f0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \
+\
+
+\i Embedded Framework Setup
+\i0 \
+\
+There are four steps you need to complete in order to implement the POTR SDK: \
+	1) Right click somewhere in your project, preferably the frameworks group, and select the "Add Files\'85" option \
+	2) Navigate to and select the "POTR.embeddedframework" folder\
+	3) Make sure the "POTR.embeddedframework" is present in your project and that the "POTR.framework" was linked to your project targets\
+	4) Add "-ObjC" to the "Other Linker Flags" build settings of your targets\
+	\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\cf0 {{\NeXTGraphic steps.png \width19480 \height16200
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\cf0 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \
+\
+
+\i Starting POTR Workflow
+\i0 \
+\
+To use POTR in your app, you must create an instance of the 
+\f2\b PCWorkflowController
+\f0\b0  class using the
+\f1  
+\f2\b - (id)initWithAPIKey:(NSString *)APIKey
+\f1\b0 ;
+\f0  method. You will be provided with an API key to use when you sign up for your developer account. The 
+\f2\b PCWorkflowController
+\f0\b0  class is your entry point into the POTR workflow. You can either present the POTR workflow as a modal view, or use your own navigation controller to present the initial view controller. Note that if you use your own navigation controller, you will need to dynamically show or hide its toolbar depending on the current view. You can do this by setting your class as a delegate of the navigation controller and adding the following method:\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f2\b \cf0 - (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated;\
+\{\
+    [navigationController setToolbarHidden:( [viewController.toolbarItems count] == 0 ) animated:animated];\
+\}
+\f0\b0 \
+\
+You are responsible for allowing the user to choose an image and provide a button to start the POTR workflow. You may use one of the button templates provided on the partner website, or design your own. If you design your own button, it is your responsibility to include the name 
+\i Postcard On The Run
+\i0 ; for instance "
+\i Send to Postcard On The Run
+\i0 ".\
+\
+When the user taps the POTR button, call the method 
+\f2\b - (UIViewController *)viewControllerForPhoto:(PCPhoto *)postcardPhoto;
+\f0\b0  with the photo the user has selected. This method will return a UIViewController subclass you will push onto your navigation controller to start the process of designing and paying for a workflow. You must use a UINavigationController for the POTR SDK to function properly. It is recommended that you display the POTR view controller modally.\
+\
+You may call 
+\f2\b - (BOOL)isValidPostcardPhoto:(PCPhoto *)postcardPhoto;
+\f0\b0  to determine if your image meets the minimum resolution requirements for a postcard image. If you call 
+\f2\b - (UIViewController *)viewControllerForPhoto:(PCPhoto *)postcardPhoto;
+\f0\b0  with an image that is too small an exception will be raised.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\i \cf0 Delegate Protocol
+\i0 \
+\
+The 
+\f2\b PCWorkflowController 
+\f0\b0 class includes a property for a delegate object that implements the 
+\f2\b PCWorkflowControllerDelegate
+\f0\b0  protocol. This protocol includes one required method which is called to dismiss the POTR view controller, and several optional methods to further customize the behavior of POTR SDK.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f2\b \cf0 - (BOOL) allowPhotoEditing;
+\f0\b0  (Optional)\
+Specify whether the user should be allowed to crop and zoom the supplied photo. The default is YES.\
+
+\f2\b \
+- (BOOL) allowPhotoFraming;
+\f0\b0  (Optional)\
+Specify whether the user should be allowed to use photos with resolutions smaller than that of the postcard, but have them framed. The default is YES.
+\f2\b \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\b0 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f2\b \cf0 - (BOOL) allowSmellMail;
+\f0\b0  (Optional)\
+Specify whether the user will be able to choose an optional scratch-and-sniff smell sticker for their postcard. The default is YES. \
+
+\f2\b \
+- (BOOL) allowStatisticsGathering;
+\f0\b0  (Optional)\
+Specify whether the POTR SDK can send usage information. The default is YES. \
+
+\f2\b \
+- (NSString *) partnerName;
+\f0\b0  (Optional)\
+Specifies the name of your application to show within the POTR workflow. If this method is not implemented this information will not be shown.\
+\
+
+\f2\b - (NSString *) promoCode;
+\f0\b0  (Optional)\
+Specifies a promo code for your application to auto-populate into the payment screen. If this method is not implemented no promo code will be auto-populated.\
+\
+
+\f2\b - (BOOL) showCancelButton;
+\f0\b0  (Optional)\
+Specify whether to show a cancel button during the POTR workflow. The default is YES.\
+\
+
+\f2\b - (UIColor *) tintColor;
+\f0\b0  (Optional)\
+Return a tint color used for the POTR navigation bar. \
+\
+
+\f2\b - (BOOL) useLocationServices;
+\f0\b0  (Optional)\
+Specify whether POTR should use Core Location to get the user's current location. The POTR SDK will prompt the user to include a GPS map image on the back of their postcard. The default is YES.\
+\
+
+\f2\b - (void) potr:(UIViewController *)potr canceled:(BOOL)canceled;
+\f0\b0   (Required)\
+Called after the POTR workflow finishes. If the canceled parameter is YES the user did not send a valid postcard, either because they canceled or an error occurred. In both cases you are responsible for dismissing the POTR view controller.\
+\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b \cf0 Further Information
+\b0 \
+\
+If you have further questions, we are happy to help. Reach out by emailing {\field{\*\fldinst{HYPERLINK "mailto:api@postcardontherun.com"}}{\fldrslt api@postcardontherun.com}}. Thanks for using Postcard On The Run SDK!\
+\
+- The Postcard On The Run Team\
+}
