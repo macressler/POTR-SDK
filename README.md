@@ -1,14 +1,12 @@
 __Welcome to the Postcard On The Run SDK Github__
 
-We have SDKs for iOS, Android, and Windows 7 Phone.
+We have SDKs for iOS, Android, and Windows 7 Phone that allow you to share in postcard revenue and offer postcarding to your users.
 
-To sign up to be a POTR Partner please visit http://api.postcardontherun.com 
-and click on the "sign up" link in the lower left hand corner.  Follow the instructions and proceed with signup.
+In order to integrate our SDKs please sign up by visiting http://api.postcardontherun.com. 
+Click the "sign up" link in the lower left hand corner, follow the instructions, and proceed with signup.
 
-You will receive an email with your API Key when we have enabled your account that allows you to access Postcard on the Run
-via an SDK.
-
-Please download one or all of our SDKs.
+You will receive an email with an API Key when we have enabled your account.  That key allows you to access the 
+Postcard on the Run API via an SDK.
 
 For iOS documentation please see https://github.com/POTR/POTR-SDK/wiki/iOS-SDK-Documentation 
 
