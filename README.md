@@ -21,7 +21,7 @@ When we enable your account you will receive an email with an API Key.  That key
 Postcard on the Run API via an SDK.
 
 You can login via username/password at the POTR partner website to change the pricing of postcards created via your app 
-and create promo codes for customer incentives and promotions.  You will receive quarterly earning reports and payments 
+and create promo codes for customer incentives and promotions.  You will receive earning reports and payments 
 based on postcard sales originating from your app.  We identify your sales via your API key.
 
 __SDKs and Documentation__
