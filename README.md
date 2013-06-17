@@ -1,6 +1,6 @@
 __Welcome to the Postcard On The Run SDK Github__
 
-We have SDKs for iOS, Android, and Windows 7 Phone that allow you to share in postcard revenue and 
+We have SDKs for iOS, Android, and Windows Phone that allow you to share in postcard revenue and 
 offer postcarding to your users.  After including a Postcard On The Run (POTR) SDK in your app 
 your customers will be able to create real postcards delivered by mail to their friends and loved ones. 
 Once you add the embedded framework to your project, simply supply an image and the POTR SDK will 
