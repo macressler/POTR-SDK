@@ -1,16 +1,15 @@
 __Welcome to the Postcard On The Run SDK Github__
 
-We have SDKs for iOS, Android, and Windows Phone that allow you to share in postcard revenue and 
-offer postcarding to your users.  After including a Postcard On The Run (POTR) SDK in your app 
-your customers will be able to create real postcards delivered by mail to their friends and loved ones. 
-Once you add the embedded framework to your project, simply supply an image and the POTR SDK will 
-create a view controller guiding your user through the steps of creating and paying for a postcard.
+We have SDKs for iOS and Android that allow you to offer postcarding to your users and share in postcard revenue.  
+After including a Postcard On The Run (POTR) SDK in your app your customers will be able to create real postcards 
+that are delivered by mail. Once you integrate the embedded framework to your project the POTR SDK will 
+create a view controller which guides your user through the steps of creating and paying for a postcard.
 
 The POTR SDK is tightly integrated with our Postal Gopher web service. When your customer wants to 
 send a postcard to a contact on their phone that does not have a mailing address, Postal Gopher will 
 send them an email or SMS text message. The contact will have 48 hours to respond with an address 
 to mail the postcard to. Because Postal Gopher is included with the POTR SDK, you do not need to do 
-anything to take advantage of this service.
+anything additional to take advantage of this service.
 
 
 __Postcard On The Run Partner Website__
