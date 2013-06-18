@@ -26,7 +26,7 @@ based on postcard sales originating from your app.  We identify your sales via y
 __SDKs and Documentation__
 
 The SDKs can each be found inside their folder above.  At this time only our iOS SDK is available here, 
-but our Android and Windows SDKs will be available here by the end of June 2013.
+but an updated version of our Android SDK will be available here by the end of June 2013.
 
 For iOS documentation please see https://github.com/POTR/POTR-SDK/wiki/iOS-SDK-Documentation 
 
