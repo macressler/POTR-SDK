@@ -37,7 +37,8 @@ __SDKs and Documentation__
 The SDKs can be found inside their folder above.  At this time only our iOS SDK is available here, 
 but an updated version of our Android SDK will be available here by the end of June 2013.
 
-The SDKs consume a photo that is passed to it, so the parent app needs to have a means to supply the photo to the SDK.  
+The SDKs consume a photo that is passed to it, so the parent app needs to have a means to supply the photo to the SDK. Our 
+apps are a good example of how this works since we use the same SDKs in our apps as are available here.
 
 For iOS documentation please see https://github.com/POTR/POTR-SDK/wiki/iOS-SDK-Documentation 
 
