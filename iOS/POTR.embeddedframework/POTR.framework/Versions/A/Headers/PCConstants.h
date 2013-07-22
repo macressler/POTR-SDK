@@ -10,15 +10,11 @@
 #import <CoreGraphics/CoreGraphics.h>
 
 
-extern NSString *PCCenveoWebServiceBaseURL;
-extern NSString *PCCenveoWebServiceSecureBaseURL;
-
 extern NSString *PCDevWebServiceBaseURL;
 extern NSString *PCDevWebServiceSecureBaseURL;
 
 extern NSString *PCWebServiceBaseURL;
 extern NSString *PCWebServiceSecureBaseURL;
-
 
 extern NSString *PCFlurryAPIKey;
 extern NSString *PCErrorDomain;
